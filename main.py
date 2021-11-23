@@ -7,6 +7,10 @@ from pytube import YouTube
 
 bot = commands.Bot(command_prefix = '$')
 filedirectory = os.getcwd()
+"""
+remove the pre-defined help command
+"""
+bot.remove_command('help')
 
 
 """
