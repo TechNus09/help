@@ -22,7 +22,8 @@ already called client, no need to call client, change all the client's mentions 
 async def on_ready():
     print("We have logged in as {0.user}".format(bot))
 
-""""@bot.event
+""""
+@bot.event
 async def on_message(message):
     #Doesn't reply to itself
     if message.author == bot.user:
@@ -30,12 +31,13 @@ async def on_message(message):
     
     #Command help
     if message.content.startswith("$help"):
-        await message.channel.send("Use '$youtube [link]' to download it as an mp3. Just make sure the embed isn't hidden!")"""
+        await message.channel.send("Use '$youtube [link] [mp3/mp4]' . Just make sure the embed isn't hidden!")
+"""
 
 """can change the previous lines to just : """
 @bot.command()
 async def help(ctx):
-    await ctx.send("Use '$youtube [link]' to download it as an mp3. Just make sure the embed isn't hidden!")
+    await ctx.send("Use '$youtube [link] [mp3/mp4]' . Just make sure the embed isn't hidden!")
 
 
 """
