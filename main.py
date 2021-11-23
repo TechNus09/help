@@ -15,7 +15,7 @@ bot.remove_command('help')
 
 """
 client = discord.client()
-already called client, no need to call client, change all the client's mentions in the code to 'client'
+already called bot, no need to call client, change all the client's mentions in the code to 'bot'
 """
 
 @bot.event
